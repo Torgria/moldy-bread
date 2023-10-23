@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='UTF-8'>
     <title>Produkt</title>
@@ -9,55 +9,80 @@
 </head>
 <body>
     <header>
-        <span class="fa fa-navicon"></span>
+        <nav class="hidden">
+            <p class="cat_herre">Herre</p>
+            <p class="cat_dame">Dame</p>
+            <p class="cat_barn">barn</p>
+        </nav>
+        <span class="fa fa-navicon" id="navicon"></span>
         <h1>Godsko</h1>
-        <span class="spacer"></span>
-        <span class="fa fa-search"></span>
-        <span class="fa fa-shopping-cart"></span>
-        <span class="fa fa-user"></span>
-
+        <nav class="cat-icons">
+            <span class="fa fa-search"></span>
+            <span class="fa fa-shopping-cart"></span>
+            <span class="fa fa-user"></span>
+        </nav>
     </header>
     <main>
-        <section>
-            <article>
+        <section class="dog-supersko">
+            <article class="dog-supersko-to">
                 <img src="https://placehold.co/140x130" alt="supersko 3000">
-                <p>Supersko 3000</p>
-                <p>4500,00 Kr</p>
             </article>
         </section>
-        <section class="colour-visual">
-            <p>Farge: </p><p id="chosen_colour"></p>
+        <section class="dog-carousel">
+            <article><img src="https://placehold.co/90x90" alt="preview 1"></article>
+            <article><img src="https://placehold.co/90x90" alt="preview 2"></article>
+            <article><img src="https://placehold.co/90x90" alt="preview 3"></article>
+            <article><img src="https://placehold.co/90x90" alt="preview 4"></article>
+            <article><img src="https://placehold.co/90x90" alt="preview 5"></article>
+            <article><img src="https://placehold.co/90x90" alt="preview 6"></article>
+            <article><img src="https://placehold.co/90x90" alt="preview 7"></article>
+            <article><img src="https://placehold.co/90x90" alt="preview 8"></article>
         </section>
-        <section class="colour-carousel">
-            <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Svart'"alt="Svart"><p>Svart</p></article>
-            <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Grønn'"alt="Grønn"><p>Grønn</p></article>
-            <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Regnbue'"alt="Regnbue"><p>Regnbue</p></article>
-            <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Lakserosa'"alt="Lakserosa"><p>Lakserosa</p></article>
-            <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Gul'"alt="Gul"><p>Gul</p></article>
-        </section>
-        <section class="size">
-            <select name="size" id="size_select">
-                <option selected disabled>Velg størrelse</option>
-                <option value="38">38</option>
-                <option value="39">39</option>
-                <option value="40">40</option>
-                <option value="41">41</option>
-                <option value="42">42</option>
-                <option value="43">43</option>
-                <option value="50">50</option>
-            </select>
-        </section>
-        <section class="put_in_basket">
-            <button>Legg til i Kurv <span class="fa fa-shopping-cart"></span></button>
+        <section class="supersko-work">
+            <section class="dog-name-price">
+                <p class="supersko-price-window">Supersko 3000</p>
+                <p class="supersko-price-value">4500,00 Kr</p>
+            </section>
+            <section class="colour-visual">
+                <p>Farge: </p><p id="chosen_colour"></p>
+            </section>
+            <section class="colour-carousel">
+                <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Svart'" alt="Svart"><p>Svart</p></article>
+                <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Grønn'" alt="Grønn"><p>Grønn</p></article>
+                <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Regnbue'" alt="Regnbue"><p>Regnbue</p></article>
+                <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Lakserosa'" alt="Lakserosa"><p>Lakserosa</p></article>
+                <article><img src="https://placehold.co/90x90" onclick="document.getElementById('chosen_colour').innerHTML='Gul'" alt="Gul"><p>Gul</p></article>
+            </section>
+            <section class="size">
+                <select name="size" id="size_select">
+                    <option selected disabled>Velg størrelse</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="50">50</option>
+                </select>
+            </section>
+            <section class="put_in_basket">
+                <button>Legg til i Kurv <span class="fa fa-shopping-cart"></span></button>
+            </section>
         </section>
         <section class="product_information">
-            <p class="produktinformasjon">produktinformasjon</p>
+            <p class="produktinformasjon">Produktinformasjon</p>
             <table>
                 <tr><td>Merke: </td><td>Supersko</td></tr>
                 <tr><td>Materiale: </td><td>Aerospace Titanium</td></tr>
                 <tr><td>Varenummmer: </td><td>1234 5679 123</td></tr>
                 <tr><td>Detaljer: </td><td>Skolisser av skinn</td></tr>
             </table>
+        </section>
+        <section class="ad-right">
+            <h3>reklame</h3>
+        </section>
+        <section class="ad-left">
+            <h3>reklame</h3>
         </section>
     </main>
     <footer>

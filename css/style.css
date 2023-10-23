@@ -22,7 +22,7 @@ header{
     max-width: 100%;
     height: 50px;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     gap: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -31,8 +31,22 @@ header{
 
 }
 
+.cat-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+header h1{
+    margin-right: auto;
+}
+
 main{
     grid-area: main;
+    margin-top: 10px;
 }
 
 header span{
@@ -40,7 +54,7 @@ header span{
 
 }
 
-.categories{
+.categories,.categories-news{
     display: flex;
     gap: 5px;
     width: 100%;
@@ -48,7 +62,7 @@ header span{
   
     
 }
-.categories *{
+.categories *,.categories-news *{
     min-width: 300px;
     min-height: 40px;
 }
@@ -72,9 +86,13 @@ header span{
 
 }
 
+.ad-right, .ad-left{
+    display: none;
+}
+
 .colour-visual{
     display: flex;
-    flex-wrap: none;
+    flex-wrap: nowrap;
 }
 
 .colour-carousel{
@@ -87,6 +105,10 @@ header span{
 .colour-carousel *{
     min-width: 90px;
     min-height: 40px;
+}
+
+.dog-carousel{
+    display: none;
 }
 
 .size{
@@ -249,3 +271,152 @@ img{
     width: 100%;
 }
 
+@media only screen and (min-width: 600px) {
+    header{
+        justify-content: space-evenly;
+        padding-left: 20px;
+        padding-right: 20px;        
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        
+    }
+
+    .hidden{
+        display: flex;
+        font-weight: bold;
+    }
+
+    #navicon{
+        display: none;
+    }
+    
+    header span{
+        justify-self: flex-end;
+    }
+
+    header h1{
+        justify-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    
+    
+    main{
+        display: grid;
+        grid-template-columns: 2fr 3fr 3fr 3fr 3fr 3fr 3fr 2fr;
+        grid-template-areas:'a b c d e f g h'
+                            'a q q q q q q h'
+                            'a i j k l m n h';
+        gap: 10px;
+    }
+
+    main h2,.categories{
+        display: none;
+    }
+
+    .default-flex{
+        grid-area: b / b / b / d;
+    }
+
+    .default-flex article img{
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    .outletwrapper{
+        grid-area: b / e / b / g;
+    }
+
+    .outlet{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: brown;
+    }
+    .categories-news{
+        grid-area: i / i / n / n ;
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+    
+    .autumn-news{
+        display: flex;
+        grid-area: q;
+        justify-self: center;
+    }
+
+    .ad-left{
+        display: flex;
+        grid-area: a;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ad-right{
+        display: flex;
+        grid-area: h;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dog-supersko{
+        grid-area: b / b / b / d;
+    }
+
+    .dog-supersko article img{
+        max-width: 800px;
+        height: auto;
+    }
+
+    .dog-carousel{
+        display: flex;
+        grid-area: i / b / i / k;
+        gap: 10px;
+    }
+
+    .supersko-work{
+        grid-area: f / f / g / g;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .supersko-price-window{
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    .supersko-price-value{
+        font-size: x-large;
+    }
+
+    .dog-name-price{
+        margin-bottom: 15rem;
+    }
+
+    .product_information{
+        grid-area: m / m / n / n;
+    }
+
+    .produktinformasjon{
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .product_information table{
+        width: 100%;
+    }
+
+    
+}   

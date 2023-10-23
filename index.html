@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='UTF-8'>
     <title>Forside</title>
@@ -9,13 +9,18 @@
 </head>
 <body>
     <header>
-        <span class="fa fa-navicon"></span>
+        <nav class="hidden">
+            <p class="cat_herre">Herre</p>
+            <p class="cat_dame">Dame</p>
+            <p class="cat_barn">barn</p>
+        </nav>
+        <span class="fa fa-navicon" id="navicon"></span>
         <h1>Godsko</h1>
-        <span class="spacer"></span>
-        <span class="fa fa-search"></span>
-        <span class="fa fa-shopping-cart"></span>
-        <span class="fa fa-user"></span>
-
+        <nav class="cat-icons">
+            <span class="fa fa-search"></span>
+            <span class="fa fa-shopping-cart"></span>
+            <span class="fa fa-user"></span>
+        </nav>
     </header>
     <main>
         <section class="default-flex">
@@ -29,14 +34,22 @@
             <article><img src="https://placehold.co/140x130" alt="Dame"></article>
             <article><img src="https://placehold.co/140x130" alt="Barn"></article>
         </section>
-        <h2>Høstens nyheter</h2>
-        <section class="categories">
+        <h2 class="autumn-news">Høstens nyheter</h2>
+        <section class="categories-news">
             <article><img src="https://placehold.co/140x130" alt="supersko 3000"></article>
             <article><img src="https://placehold.co/140x130" alt="Løpesko"></article>
             <article><img src="https://placehold.co/140x130" alt="Kattesko"></article>
+            <article><img src="https://placehold.co/140x130" alt="Booties"></article>
+            <article><img src="https://placehold.co/140x130" alt="Tursko"></article>
         </section>
         <section class="outletwrapper">  
             <div class="outlet"><span>Outlet</span></div>
+        </section>
+        <section class="ad-right">
+            <h3>reklame</h3>
+        </section>
+        <section class="ad-left">
+            <h3>reklame</h3>
         </section>
     </main>
    <footer>
